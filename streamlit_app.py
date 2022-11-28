@@ -17,6 +17,6 @@ plt.ylabel("Y axis")
 plt.plot(x, y, color ="green")
 plt.show()
 
-x, y = plt.subplots()
-st.pyplot(fig)
+plt.subplots()
+st.pyplot(plt.subplots())
 
