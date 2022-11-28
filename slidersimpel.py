@@ -1,7 +1,7 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 
-import streamlit as st
+import numpy as np
 
 # data to be plotted
 rentangmax = st.slider('Berapa rentang max yang kamu inginkan?', 0, 130, 25)
