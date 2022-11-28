@@ -1,23 +1,4 @@
-"""
-# Welcome to Streamlit!
-    st.altair_chart(
-        pandasamlit_downloads(selected_data_streamlit), use_container_width=True
-    )
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
-    # OTHER DOWNLOADS
-
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
-    st.header("Compare other package downloads")
-
-In the meantime, below is an example of what you can do with just a few lines of code:
-"""
-    instructions = """
-    Click and drag line chart to select and pan date interval\n
-    Hover over bar chart to view downloads\n
-    Click on a bar to highlight that package
-    """
     select_packages = st.multiselect(
         "Select Python packages to compare",
         package_names,
