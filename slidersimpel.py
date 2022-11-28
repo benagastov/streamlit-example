@@ -8,8 +8,9 @@ rentangmax = st.slider('Berapa rentang max yang kamu inginkan?', 0, 130, 25)
 st.write("rentang max nya sebesar ", rentangmax, 'satuan')
 
 #create your figure and get the figure object returned
-fig = plt.figure() 
-plt.plot(np.arange(0.0, rentangmax, 0.1), np.cos(2*np.pi*t2), color='tab:orange', linestyle='--', marker='.') 
+fig = plt.figure()
+t1 = np.arange(0.0, rentangmax, 0.1)
+plt.plot(t1, np.cos(2*np.pi*t1), color='tab:orange', linestyle='--', marker='.') 
 
 st.pyplot(fig)
 
