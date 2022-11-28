@@ -1,8 +1,2 @@
+vega-datasets
 streamlit
-db-dtypes
-google-auth
-google-cloud-storage
-google-cloud
-google-cloud-bigquery
-pandas
-datetime
