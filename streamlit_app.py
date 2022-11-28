@@ -7,7 +7,7 @@ import pandas as pd
 # data to be plotted
 rentangmax = st.slider('Berapa rentang max yang kamu inginkan?', 0, 130, 25)
 st.write("rentang max nya sebesar ", rentangmax, 'satuan')
-x = np.arange(1, rentangmax)
+#x = np.arange(1, rentangmax) Gak perlu cuy otomatis dari pandas
 y = np.array([100, 10, 300, 20, 500, 60, 700, 80, 900, 100])
  
 
