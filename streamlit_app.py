@@ -1,45 +1,9 @@
+import streamlit as st
 
-    select_packages = st.multiselect(
-        "Select Python packages to compare",
-        package_names,
-        default=[
-            "pandas",
-            "keras",
-        ],
-        help=instructions,
-    )
-
-    select_packages_df = pd.DataFrame(select_packages).rename(columns={0: "project"})
-
-with st.echo(code_location='below'):
-    total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
-    num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
-    if not select_packages:
-        st.stop()
-
-    Point = namedtuple('Point', 'x y')
-    data = []
-    filtered_df = selected_data_all[
-        selected_data_all["project"].isin(select_packages_df["project"])
-    ]
-
-    points_per_turn = total_points / num_turns
-    st.altair_chart(plot_all_downloads(filtered_df), use_container_width=True)
-
-    for curr_point_num in range(total_points):
-        curr_turn, i = divmod(curr_point_num, points_per_turn)
-        angle = (curr_turn + 1) * 2 * math.pi * i / points_per_turn
-        radius = curr_point_num / total_points
-        x = radius * math.cos(angle)
-        y = radius * math.sin(angle)
-        data.append(Point(x, y))
-
-    st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
-        .mark_circle(color='#0068c9', opacity=0.5)
-        .encode(x='x:Q', y='y:Q'))
-st.title("Downloads")
-st.write(
-    "Metrics on how often Pandas is being downloaded from PyPI (Python's main "
-    "package repository, i.e. where `pip install pandas` downloads the package from)."
-)
-main()
+# Use widgets' returned values in variables:
+for i in range(int(st.number_input('Num:'))):
+ foo()
+if st.sidebar.selectbox('I:',['f']) == 'f':
+  b()
+my_slider_val = st.slider('Quinn Mallory', 1, 88)
+st.write(slider_val)
