@@ -10,7 +10,7 @@ st.write("rentang max nya sebesar ", rentangmax, 'satuan')
 #create your figure and get the figure object returned
 fig = plt.figure()
 t1 = np.arange(0.0, rentangmax, 0.1)
-plt.plot(t1, np.cos(2*np.pi), color='tab:orange', linestyle='--', marker='.') 
+plt.plot(np.cos(t1*np.pi), color='tab:orange', linestyle='--', marker='.') 
 
 st.pyplot(fig)
 
