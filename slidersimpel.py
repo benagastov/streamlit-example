@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # # data to be plotted
-a = st.slider('Silakan pilih diameter dalam', 0, 1.0, 0.2,0.05)
-b = st.slider('Silakan pilih diameter luar', 0, 1.0, 0.2,0.05)
+dm1 = st.slider('Silakan pilih diameter dalam', 0, 1.0, 0.2,0.05)
+dm2 = st.slider('Silakan pilih diameter luar', 0, 1.0, 0.2,0.05)
 st.write("rentang max nya sebesar ", rentangmax, 'satuan')
 
 import numpy as np
@@ -14,7 +14,7 @@ from scipy.stats import norm
 import statistics
 
 # Plot between -10 and 10 with .001 steps.
-x_axis = np.arange(-20, 20, 0.01)
+x_axis = np.arange(-8, 8, 0.01)
 
 # Calculating mean and standard deviation
 mean = statistics.mean(x_axis)*0.4
@@ -39,13 +39,11 @@ plt.show()
 st.pyplot(fig)
 
 # Calculating mean and standard deviation
-mean = statistics.mean(x_axis)*a+b
-sd = statistics.stdev(x_axis)*a+b
+mean4 = statistics.mean(x_axis)*dm1+dm2
+sd4 = statistics.stdev(x_axis)*dm1+dm2
 
 fig2 = plt.figure()
-plt.plot(x_axis, norm.pdf(x_axis, mean, sd))
-plt.plot(x_axis, norm.pdf(x_axis, mean2, sd2))
-plt.plot(x_axis, norm.pdf(x_axis, mean3, sd3))
+plt.plot(x_axis, norm.pdf(x_axis, mean4, sd4))
 plt.show()
 st.pyplot(fig2)
 
