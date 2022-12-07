@@ -4,8 +4,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # # data to be plotted
-# rentangmax = st.slider('Berapa rentang max yang kamu inginkan?', 0, 130, 25)
-# st.write("rentang max nya sebesar ", rentangmax, 'satuan')
+rentangmax = st.slider('Silakan pilih diameter dalam', 0, 1.0, 0.2,0.05)
+rentangmax = st.slider('Silakan pilih diameter luar', 0, 1.0, 0.2,0.05)
+st.write("rentang max nya sebesar ", rentangmax, 'satuan')
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -36,4 +37,15 @@ plt.show()
 # plt.plot(np.cos(t1*np.pi), color='tab:orange', linestyle='--', marker='.') 
 
 st.pyplot(fig)
+
+# Calculating mean and standard deviation
+mean = statistics.mean(x_axis)*a+b
+sd = statistics.stdev(x_axis)*a+b
+
+fig2 = plt.figure()
+plt.plot(x_axis, norm.pdf(x_axis, mean, sd))
+plt.plot(x_axis, norm.pdf(x_axis, mean2, sd2))
+plt.plot(x_axis, norm.pdf(x_axis, mean3, sd3))
+plt.show()
+st.pyplot(fig2)
 
