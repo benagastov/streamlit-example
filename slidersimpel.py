@@ -37,7 +37,7 @@ with tab1:
     plt.ylabel('Mass Sensitivity (Hz/Kg)')
     plt.xlabel('Diameter Elektroda (mm)')
     st.pyplot(fig)
-    st.write("Grafik Meniru Hasil Jurnal')
+    st.write("Grafik Meniru Hasil Jurnal")
     
     image3 = Image.open('Plot Sesungguhnya.JPG')
     st.image(image3, caption='Plot yang dikutip dari Jurnal Suplemen')
