@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # # data to be plotted
-rentangmax = st.slider('Silakan pilih diameter dalam', 0, 1.0, 0.2,0.05)
-rentangmax = st.slider('Silakan pilih diameter luar', 0, 1.0, 0.2,0.05)
+a = st.slider('Silakan pilih diameter dalam', 0, 1.0, 0.2,0.05)
+b = st.slider('Silakan pilih diameter luar', 0, 1.0, 0.2,0.05)
 st.write("rentang max nya sebesar ", rentangmax, 'satuan')
 
 import numpy as np
