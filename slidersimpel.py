@@ -13,7 +13,7 @@ with tab1:
   col1, col2 = st.columns([8, 1])
   
   with col2:
-    image = Image.open('Mamako_hugging (1).png')
+    image = Image.open('Mamako_hugging2.png')
     st.image(image, caption='Google Ads/DMM')
   with col1:
     # Plot between -10 and 10 with .001 steps.
