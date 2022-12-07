@@ -10,7 +10,11 @@ import statistics
 tab1, tab2 = st.tabs(["📈 Grafik Awal", "🗃 Grafik Kustom"])
 with tab1:
   st.subheader("Grafik Sensitivitas Massa yang Dipengaruhi Diameter Elektroda, Massa Gas dan Frekuensi")
-
+  with st.sidebar:
+    add_radio = st.radio(
+        "Choose a shipping method",
+        ("Standard (5-15 days)", "Express (2-5 days)")
+    )
 
   # Plot between -10 and 10 with .001 steps.
   x_axis = np.arange(-8, 8, 0.01)
