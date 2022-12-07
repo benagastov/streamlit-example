@@ -9,7 +9,7 @@ import statistics
 
 tab1, tab2 = st.tabs(["📈 Grafik Awal", "🗃 Grafik Kustom"])
 with tab1:
-  col1, col2 = st.columns([4, 1])
+  col1, col2 = st.columns([1, 8])
   st.subheader("Grafik Sensitivitas Massa yang Dipengaruhi Diameter Elektroda, Massa Gas dan Frekuensi")
   with col1:
     image = Image.open('Mamako_hugging (1).png')
