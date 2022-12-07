@@ -34,6 +34,8 @@ with tab1:
     plt.plot(x_axis, norm.pdf(x_axis, mean2, sd2))
     plt.plot(x_axis, norm.pdf(x_axis, mean3, sd3))
     plt.show()
+    plt.xlabel('Mass Sensitivity (Hz/Kg)')
+    plt.ylabel('Jari-jari (mm)')
     st.pyplot(fig)
     
     image3 = Image.open('Plot Sesungguhnya.JPG')
