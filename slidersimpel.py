@@ -35,7 +35,7 @@ with tab1:
     plt.plot(x_axis, norm.pdf(x_axis, mean3, sd3))
     plt.show()
     plt.ylabel('Mass Sensitivity (Hz/Kg)')
-    plt.xlabel('Jari-jari (mm)')
+    plt.xlabel('Diameter Elektroda (mm)')
     st.pyplot(fig)
     
     image3 = Image.open('Plot Sesungguhnya.JPG')
@@ -61,7 +61,7 @@ with tab2:
   fig2 = plt.figure()
   plt.plot(x_axis, norm.pdf(x_axis, mean4, sd4))
   plt.ylabel('Mass Sensitivity (Hz/Kg)')
-  plt.xlabel('Jari-jari (mm)')
+  plt.xlabel('Diameter Elektroda (mm)')
   plt.show()
   st.pyplot(fig2)
 
