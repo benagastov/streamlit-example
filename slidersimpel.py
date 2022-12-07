@@ -1,6 +1,6 @@
 import streamlit as st
 import matplotlib.pyplot as plt
-
+from PIL import Image
 import numpy as np
 
 import matplotlib.pyplot as plt
@@ -11,10 +11,8 @@ tab1, tab2 = st.tabs(["📈 Grafik Awal", "🗃 Grafik Kustom"])
 with tab1:
   st.subheader("Grafik Sensitivitas Massa yang Dipengaruhi Diameter Elektroda, Massa Gas dan Frekuensi")
   with st.sidebar:
-    add_radio = st.radio(
-        "Choose a shipping method",
-        ("Standard (5-15 days)", "Express (2-5 days)")
-    )
+    image = Image.open('https://static.wikia.nocookie.net/vsbattles/images/6/64/Mamako_hugging.png/revision/latest?cb=20200405203648')
+    st.image(image, caption='Sunrise by the mountains')
 
   # Plot between -10 and 10 with .001 steps.
   x_axis = np.arange(-8, 8, 0.01)
