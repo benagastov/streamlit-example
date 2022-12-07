@@ -35,6 +35,9 @@ with tab1:
     plt.plot(x_axis, norm.pdf(x_axis, mean3, sd3))
     plt.show()
     st.pyplot(fig)
+    
+    image3 = Image.open('Plot Sesungguhnya.JPG')
+    st.image(image3, caption='Plot yang dikutip dari Jurnal Suplemen')
 
 
 with tab2:
