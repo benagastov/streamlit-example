@@ -13,7 +13,7 @@ with tab1:
   st.subheader("Grafik Sensitivitas Massa yang Dipengaruhi Diameter Elektroda, Massa Gas dan Frekuensi")
   with col1:
     image = Image.open('Mamako_hugging (1).png')
-    st.image(image, caption='Sunrise by the mountains')
+    st.image(image, caption='Google Ads/DMM')
   with col2:
     # Plot between -10 and 10 with .001 steps.
     x_axis = np.arange(-8, 8, 0.01)
