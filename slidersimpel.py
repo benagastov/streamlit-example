@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 
 import numpy as np
 
-# data to be plotted
-rentangmax = st.slider('Berapa rentang max yang kamu inginkan?', 0, 130, 25)
-st.write("rentang max nya sebesar ", rentangmax, 'satuan')
+# # data to be plotted
+# rentangmax = st.slider('Berapa rentang max yang kamu inginkan?', 0, 130, 25)
+# st.write("rentang max nya sebesar ", rentangmax, 'satuan')
 
 import numpy as np
 import matplotlib.pyplot as plt
