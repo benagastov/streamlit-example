@@ -2,5 +2,5 @@ matplotlib
 pandas
 streamlit
 scipy
-scipy.stats
+scipy-stats
 statistics
