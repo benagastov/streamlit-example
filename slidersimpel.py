@@ -3,12 +3,6 @@ import matplotlib.pyplot as plt
 
 import numpy as np
 
-# # data to be plotted
-dm1 = st.slider('Silakan pilih diameter dalam', 0.0, 1.0, 0.2,0.05)
-dm2 = st.slider('Silakan pilih diameter luar', 0.0, 1.0, 0.2,0.05)
-st.write("diameter dalam nya sebesar ", dm1, 'nm')
-st.write("dan diameter luar nya sebesar ", dm2, 'nm')
-
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import norm
@@ -36,6 +30,12 @@ plt.show()
 
 # t1 = np.arange(0.0, rentangmax, 0.1)
 # plt.plot(np.cos(t1*np.pi), color='tab:orange', linestyle='--', marker='.') 
+# # data to be plotted
+dm1 = st.slider('Silakan pilih diameter dalam', 0.0, 1.0, 0.2,0.05)
+dm2 = st.slider('Silakan pilih diameter luar', 0.0, 1.0, 0.2,0.05)
+st.write("diameter dalam nya sebesar ", dm1, 'nm')
+st.write("dan diameter luar nya sebesar ", dm2, 'nm')
+
 
 st.pyplot(fig)
 
