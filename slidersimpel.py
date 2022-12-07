@@ -14,7 +14,7 @@ with tab1:
   
   with col2:
     image = Image.open('Mamako_hugging2.png')
-    st.image(image, caption='Google Ads/DMM')
+    st.image(image, caption='Google Ads')
   with col1:
     # Plot between -10 and 10 with .001 steps.
     x_axis = np.arange(-8, 8, 0.01)
