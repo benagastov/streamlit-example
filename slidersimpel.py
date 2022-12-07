@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 from scipy.stats import norm
 import statistics
 
-tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
+tab1, tab2 = st.tabs(["📈 Grafik Awal", "🗃 Grafik Kustom"])
 with tab1:
-  st.subheader("A tab with a chart")
+  st.subheader("Grafik Sensitivitas Massa yang Dipengaruhi Diameter Elektroda, Massa Gas dan Frekuensi")
 
 
   # Plot between -10 and 10 with .001 steps.
@@ -33,7 +33,7 @@ with tab1:
 
 with tab2:
   #create your figure and get the figure object returned
-  st.subheader("A tab with the data")
+  st.subheader("Grafik Sensitivitas Massa dengan Diameter Variabel")
   # t1 = np.arange(0.0, rentangmax, 0.1)
   # plt.plot(np.cos(t1*np.pi), color='tab:orange', linestyle='--', marker='.') 
   # # data to be plotted
