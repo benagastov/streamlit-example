@@ -10,7 +10,7 @@ import statistics
 import streamlit as st
 
 st.write(f'''
-    <a target="_self" href="https://benagastov.github.io/mpi/Page%2012.html">
+    <a target="_self" href="https://benagastov.github.io/mpic.github.io/Page-12.html">
         <button>
             Next
         </button>
