@@ -37,7 +37,7 @@ def nav_page(page_name, timeout_secs=3):
 if st.button("< Prev"):
     nav_page("Foo")
 if st.button("Next >"):
-    nav_page("Bar")
+    nav_page("google.com")
 
 tab1, tab2 = st.tabs(["📈 Grafik Awal", "🗃 Grafik Kustom"])
 with tab1:
