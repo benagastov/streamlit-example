@@ -14,7 +14,7 @@ def redirect(_url):
   link = ''
   st.markdown(link, unsafe_allow_html=True)
 
-if st.button(“Login”):
+if st.button('login'):
   redirect('google.com')
 
 tab1, tab2 = st.tabs(["📈 Grafik Awal", "🗃 Grafik Kustom"])
