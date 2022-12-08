@@ -7,12 +7,17 @@ import matplotlib.pyplot as plt
 from scipy.stats import norm
 import statistics
 
-from streamlit.components.v1 import html
-
 import streamlit as st
-def redirect(_url):
-  link = ''
-  st.markdown(link, unsafe_allow_html=True)
+
+st.write(f'''
+    <a target="_self" href="https://eox.at">
+        <button>
+            Please login via Google
+        </button>
+    </a>
+    ''',
+    unsafe_allow_html=True
+)
 
 if st.button('login'):
   redirect('google.com')
