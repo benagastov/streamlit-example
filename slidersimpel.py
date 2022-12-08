@@ -11,11 +11,11 @@ from streamlit.components.v1 import html
 
 import streamlit as st
 def redirect(_url):
-  link = ‘google.com’
+  link = ''
   st.markdown(link, unsafe_allow_html=True)
 
 if st.button(“Login”):
-  redirect(‘google.com’)
+  redirect('google.com')
 
 tab1, tab2 = st.tabs(["📈 Grafik Awal", "🗃 Grafik Kustom"])
 with tab1:
