@@ -63,16 +63,23 @@ with tab2:
   # # data to be plotted
   dm1 = st.slider('Silakan pilih diameter dalam', 0.0, 1.0, 0.2,0.05)
   dm2 = st.slider('Silakan pilih diameter luar', 0.0, 1.0, 0.2,0.05)
-  st.write("diameter dalam nya sebesar ", dm1, 'nm')
-  st.write("dan diameter luar nya sebesar ", dm2, 'nm')
+  dm3 = st.slider('Silakan pilih diameter dalam', 0.0, 1.0, 0.5,0.05)
+  dm4 = st.slider('Silakan pilih diameter luar', 0.0, 1.0, 0.5,0.05)
+  st.write("diameter dalam cincin 1 sebesar ", dm1, 'nm')
+  st.write("dan diameter luar cincin 1 sebesar ", dm2, 'nm')
+  st.write("diameter dalam cincin 2 sebesar ", dm3, 'nm')
+  st.write("dan diameter luar cincin 2 sebesar ", dm4, 'nm')
 
 
   # Calculating mean and standard deviation
   mean4 = statistics.mean(x_axis)*dm1+dm2
   sd4 = statistics.stdev(x_axis)*dm1+dm2
+  mean5 = statistics.mean(x_axis)*dm3+dm4
+  sd5 = statistics.stdev(x_axis)*dm3+dm4
 
   fig2 = plt.figure()
   plt.plot(x_axis, norm.pdf(x_axis, mean4, sd4))
+  plt.plot(x_axis, norm.pdf(x_axis, mean5, sd5))
   plt.ylabel('Mass Sensitivity (Hz/Kg)')
   plt.xlabel('Diameter Elektroda (mm)')
   plt.show()
