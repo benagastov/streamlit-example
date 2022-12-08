@@ -10,17 +10,14 @@ import statistics
 import streamlit as st
 
 st.write(f'''
-    <a target="_self" href="https://eox.at">
+    <a target="_self" href="https://benagastov.github.io/mpi/Page%2012.html">
         <button>
-            Please login via Google
+            Next
         </button>
     </a>
     ''',
     unsafe_allow_html=True
 )
-
-if st.button('login'):
-  redirect('google.com')
 
 tab1, tab2 = st.tabs(["📈 Grafik Awal", "🗃 Grafik Kustom"])
 with tab1:
