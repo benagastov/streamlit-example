@@ -7,6 +7,10 @@ import matplotlib.pyplot as plt
 from scipy.stats import norm
 import statistics
 
+if st.button('Next'):
+    r = requests.get('https://youtu.be/dQw4w9WgXcQ') 
+    print(r.url) # https://www.youtube.com/watch?v=dQw4w9WgXcQ&feature=youtu.be
+
 tab1, tab2 = st.tabs(["📈 Grafik Awal", "🗃 Grafik Kustom"])
 with tab1:
   st.subheader("Grafik Sensitivitas Massa yang Dipengaruhi Diameter Elektroda, Massa Gas dan Frekuensi")
