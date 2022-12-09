@@ -49,10 +49,10 @@ with tab1:
     plt.ylabel('Mass Sensitivity (Hz/Kg)')
     plt.xlabel('Diameter Elektroda (mm)')
     st.pyplot(fig)
-    st.write("Grafik Meniru Hasil Jurnal")
+    st.write("Grafik Meniru Hasil Jurnal dengan densitas massa = 1 µg/mm2")
     
     image3 = Image.open('Plot Sesungguhnya.JPG')
-    st.image(image3, caption='Plot yang dikutip dari Jurnal Suplemen')
+    st.image(image3, caption='Plot yang dikutip dari Jurnal Analysis of the Radial Dependence of Mass Sensitivity for Modified-Electrode Quartz Crystal Resonators')
 
 
 with tab2:
@@ -61,10 +61,10 @@ with tab2:
   # t1 = np.arange(0.0, rentangmax, 0.1)
   # plt.plot(np.cos(t1*np.pi), color='tab:orange', linestyle='--', marker='.') 
   # # data to be plotted
-  dm1 = st.slider('Silakan pilih diameter dalam', 0.0, 1.0, 0.2,0.05)
-  dm2 = st.slider('Silakan pilih diameter luar', 0.0, 1.0, 0.2,0.05)
-  dm3 = st.slider('Silakan pilih diameter dalam', 0.0, 1.0, 0.5,0.05)
-  dm4 = st.slider('Silakan pilih diameter luar', 0.0, 1.0, 0.5,0.05)
+  dm1 = st.slider('Silakan pilih diameter dalam cincin 1', 0.0, 1.0, 0.2,0.05)
+  dm2 = st.slider('Silakan pilih diameter luar cincin 1', 0.0, 1.0, 0.2,0.05)
+  dm3 = st.slider('Silakan pilih diameter dalam cincin 2', 0.0, 1.0, 0.5,0.05)
+  dm4 = st.slider('Silakan pilih diameter luar cincin 2', 0.0, 1.0, 0.5,0.05)
   st.write("diameter dalam cincin 1 sebesar ", dm1, 'nm')
   st.write("dan diameter luar cincin 1 sebesar ", dm2, 'nm')
   st.write("diameter dalam cincin 2 sebesar ", dm3, 'nm')
